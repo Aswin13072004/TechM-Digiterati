@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Routine Planner</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Routine Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#create-routine">Create Routine</a></li>
+                <li><a href="#my-routines">My Routines</a></li>
+                <li><a href="#progress-tracker">Progress Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Your Fitness Journey</h2>
+            <p>Start creating your custom workout plans and track your progress.</p>
+        </section>
+
+        <section id="create-routine">
+            <h2>Create Routine</h2>
+            <form id="routine-form">
+                <input type="text" id="routine-name" placeholder="Routine Name" required>
+                <div id="exercises-container">
+                    <!-- Exercises will be added here dynamically -->
+                </div>
+                <button type="button" id="add-exercise">Add Exercise</button>
+                <button type="submit">Save Routine</button>
+            </form>
+        </section>
+
+        <section id="my-routines">
+            <h2>My Routines</h2>
+            <div id="routines-list">
+                <!-- Routines will be displayed here -->
+            </div>
+        </section>
+
+        <section id="progress-tracker">
+            <h2>Progress Tracker</h2>
+            <div id="progress-chart">
+                <!-- Progress chart will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fitness Routine Planner</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/routineManager.js"></script>
+    <script src="scripts/progressTracker.js"></script>
+</body>
+</html>
